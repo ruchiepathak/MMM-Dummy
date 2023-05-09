@@ -7,6 +7,7 @@ Module.register("MMM-Dummy", {
   // Override dom generator.
   getDom: function() {
     var wrapper = document.createElement("div");
+    wrapper.className = "dummydiv";
     wrapper.innerHTML = this.config.text;
     return wrapper;
   },
